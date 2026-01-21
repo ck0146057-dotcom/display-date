@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Display date</title>
+
+<style>
+    body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: Arial;
+    }
+
+    h2 {
+        color: darkblue;
+        margin-top: 50px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: darkblue;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Display Date Using JavaScript</h2>
+<button onclick="displayDate()">Display Date</button>
+
+<script>
+function displayDate()
+{
+    var d = new Date();
+    alert("Today's date is: " + d.toDateString());
+}
+</script>
+
+</body>
+</html>
